@@ -1,0 +1,31 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(180deg, #f7d0cb, #f4ac95);
+  background-attachment: fixed;
+}
+
+main {
+  background-color: #fff;
+  padding: 10px;
+  margin: auto;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #a5543eb2;
+}
+
+h1 {
+  color: #366775;
+  text-align: center;
+  text-shadow: 1px 1px 2px #36677569;
+}
+
+h2 {
+  color: #7194ac;
+}
+p {
+  text-align: justify;
+}

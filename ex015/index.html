@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando fontes externas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Oswald&display=swap');
+
+        @font-face {
+            font-family: 'Faroeste';
+            src: url('fonts/Carnevalee\ Freakshow.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Circus';
+            src: url('fonts/Hoedown-Shadow.ttf') format('truetype'), url('fonts/Hoedown.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            margin: auto;
+        }
+
+        h1 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-family: 'Faroeste', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            color: #C70511;
+            font-weight: 700;            
+        }
+
+        .font {
+            font-family: 'Circus';
+            color: #0B3845;
+            font-size: 4em;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Life is the Strange</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
+    Natus officiis atque, quis dolorem praesentium est sunt. Reiciendis, <br> 
+    at distinctio exercitationem deserunt quos laudantium dolores veniam <br> 
+    minus. Ea temporibus quia quisquam!</p>     
+    <h2>Red Dead Redemptiom 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi <br> 
+    id odit adipisci modi, animi assumenda a deleniti illo aspernatur! <br> 
+    Dignissimos dolorum eveniet ut tempora dolorem quia earum <br> 
+    dolor eum recusandae.</p>
+    <h2 class="font">Circus</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus perferendis <br>
+    expedita porro laboriosam nostrum quas. Possimus quos totam asperiores <br> 
+    voluptate reiciendis laudantium magnam voluptatum hic. Amet aperiam a maiores.</p>
+</body>
+</html>
