@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping tags</title>
+    <style>
+      body {
+        margin: 20px;
+        padding: 0;
+
+        background-color: #001524;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        box-sizing: border-box;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+      }
+
+      .wrapper {
+        background-color: white;
+        border-radius: 10px;
+        border: 2px solid #e05400;
+
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      header > h1 {
+        padding-bottom: 10px;
+        color: #e05400;
+      }
+
+      nav {
+        background-color: #43a6f2;
+        padding: 5px;
+      }
+
+      nav > a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+
+        margin-right: 20px;
+        padding: 4px;
+      }
+
+      nav > a:hover {
+        background-color: rgb(237, 247, 253);
+        color: #43a6f2;
+      }
+
+      section > h2 {
+        background-color: rgb(215, 231, 255);
+        width: max-content;
+        border-radius: 50px;
+        padding: 5px 15px;
+      }
+
+      #photograph {
+        color: #001d59;
+        margin-bottom: 30px;
+      }
+
+      #photograph > ul {
+        list-style: none;
+        height: 300px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        padding: 0;
+      }
+
+      #notices > h2 {
+        color: #001d59;
+        margin-bottom: 15px;
+      }
+
+      article {
+        width: 600px;
+        background-color: #fddc95;
+        border-radius: 5px 20px;
+        border: 3px solid white;
+        outline: 1px solid #e05400;
+
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      article > h3 {
+        color: #fe760e;
+      }
+
+      article > p,
+      aside {
+        background-color: white;
+        border-radius: 5px;
+
+        margin: 10px 10px 10px 0;
+        padding: 5px;
+      }
+
+      aside {
+        color: #003488;
+        font-weight: bold;
+        width: max-content;
+      }
+
+      .see-more {
+        display: none;
+        width: calc(100% / 2);
+        background-color: #9ee6fbfe;
+
+        text-align: center;
+        margin: auto;
+      }
+
+      .see-more > a {
+        color: #001d59;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .see-more > a:visited {
+        color: #001d59;
+      }
+
+      article:hover > .see-more {
+        display: block;
+        cursor: pointer;
+      }
+
+      footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="wrapper">
+      <h1>Meu site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main class="wrapper">
+      <section id="photograph">
+        <h2>Olhe que fotos legais!!</h2>
+        <ul>
+          <li>
+            <img
+              src="https://source.unsplash.com/300x300/?travel"
+              alt="Paisagem"
+            />
+          </li>
+          <li>
+            <img
+              src="https://source.unsplash.com/300x300/?nature"
+              alt="Paisagem"
+            />
+          </li>
+          <li>
+            <img
+              src="https://source.unsplash.com/300x300/?climber"
+              alt="Paisagem"
+            />
+          </li>
+        </ul>
+      </section>
+      <section id="notices">
+        <h2>As pricipais notícias inventadas</h2>
+        <article>
+          <h3>Goku mata Vegeta</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+            pariatur neque, officiis earum blanditiis quos, commodi nesciunt non
+            quis veritatis eveniet sit iure qui error quam facilis recusandae!
+            Corrupti, commodi.
+          </p>
+          <aside>Fulano do Dragon Ball</aside>
+          <p class="see-more"><a href="#">Veja mais</a></p>
+        </article>
+        <article>
+          <h3>Ana Maria faz cosplay de Supla</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+            pariatur neque, officiis earum blanditiis quos, commodi nesciunt non
+            quis veritatis eveniet sit iure qui error quam facilis recusandae!
+            Corrupti, commodi.
+          </p>
+          <aside>Louro José RIP</aside>
+          <p class="see-more"><a href="#">Veja mais</a></p>
+        </article>
+        <article>
+          <h3>Anita faz cirurgia e continua feia</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+            pariatur neque, officiis earum blanditiis quos, commodi nesciunt non
+            quis veritatis eveniet sit iure qui error quam facilis recusandae!
+            Corrupti, commodi.
+          </p>
+          <aside>Sincero e ponto</aside>
+          <p class="see-more"><a href="#">Veja mais</a></p>
+        </article>
+      </section>
+    </main>
+    <footer class="wrapper">
+      <p>Desenvolvido com ❤️ por JuliaGomes</p>
+    </footer>
+  </body>
+</html>
